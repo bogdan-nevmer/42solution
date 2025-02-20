@@ -7,7 +7,7 @@ void print(int matrix[][N],int expected,string name) {
 
 	string msg = expected == actual ? "pass(green)" : "fail(red)";
 
-	cout <<  msg << endl;
+	cout <<  name << endl;
 	cout << "-------------------------------------" << endl;
 
 }
@@ -22,7 +22,7 @@ void test01() {
 	{5,6,7,8,9} };
 
 	int expected = 0;
-	print( matrix , expected , "test01");
+	print( matrix[][N] , expected , name);
 }
 void test02() {
 
@@ -34,7 +34,7 @@ void test02() {
 	{5,6,7,8,9} };
 
 	int expected = 1;
-	print(matrix, expected, "test02");
+	print(matrix[][N], expected, name);
 }
 void test03() {
 
@@ -46,7 +46,7 @@ void test03() {
 	{5,6,7,8,0} };
 
 	int expected = 5;
-	print(matrix, expected, "test03");
+	print(matrix[][N], expected, name);
 }
 void test04() {
 
@@ -58,5 +58,5 @@ void test04() {
 	{0,0,0,0,0} };
 
 	int expected = 25;
-	print(matrix, expected, "test04");
+	print(matrix[][N], expected, name);
 }
